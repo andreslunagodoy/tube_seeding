@@ -1,0 +1,16 @@
+[project]
+name = "ppo_masking"
+version = "0.1.0"
+authors = [
+    {name = "Mao Zeng", email = "zengmao@hotmail.co.uk"},
+]
+description = "Fork of ppo.py from CleanRL to support action masking"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.21.0",
+    "gymnasium",
+    "torch",
+    "tyro>=0.5.10",
+    "tensorboard>=2.10.0"
+]

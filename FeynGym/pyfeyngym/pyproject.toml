@@ -1,0 +1,29 @@
+[project]
+name = "pyfeyngym"
+version = "0.1.0"
+authors = [
+    {name = "Mao Zeng", email = "zengmao@hotmail.co.uk"},
+]
+description = "Python wrapper for FeynGym RL environment for IBP reduction of Feynman integrals"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "juliacall>=0.9.26",
+    "juliapkg>=0.1.17",
+    "numpy>=1.21.0",
+    "gymnasium",
+    "matplotlib"
+]
+
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project.scripts]
+optimize-ordering-NN = "pyfeyngym.optimize_ordering_NN:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

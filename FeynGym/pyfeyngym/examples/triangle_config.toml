@@ -1,0 +1,32 @@
+# Integral family settings
+folder = "examples/triangle"
+ibp_file = "IBP"
+trivial_sector_file = "trivialsector"
+cut = "1,2,3,4,5,6" # Max cut (all 6 propagators cut) for a quick test
+n_indices = 7
+n_ibp_operators = 9
+
+# Integrals and seeding
+top_sector = "1,1,1,1,1,1,0"         # default triangle top sector
+s_max = 3                            # default s_max
+r_max = 7                            # default r_max = number of 1's in top_sector
+d_max = 1                            # default d_max
+target_integral = "1,1,1,1,1,1,-3"   # default target = top_sector with last entry -3
+
+# Variables (single string, tables are not supported)
+variables = "d->31293,m2->17917,m3->22913"
+
+# Optimization settings
+optimize_seeds_only = false
+max_evals = 1000
+seed = 42
+restarts = 3
+incpopsize = 2
+pretrain_epochs = 20
+pretrain_batch_size = 256
+learning_rate = 0.1 # Huge learning rate due to a tiny data set in this toy config
+
+# Output settings (directory; files saved here: saved_eps.pkl, integrals_sorting_network.pt, resorted_seed_op_list.txt, vars_resorted.txt)
+save_path = "save"
+gen_eqs_only = false
+# (skips optimization and roll out previously saved steps)
