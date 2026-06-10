@@ -3,7 +3,7 @@
 ## About
 
 This repository is the companion to the paper **"Efficient AI-Inspired
-Reduction of Feynman Integrals via Tube Seeding"** ([arXiv:2606.xxxxx](https://arxiv.org/abs/2606.xxxxx)),
+Reduction of Feynman Integrals via Tube Seeding"** ([arXiv:2606.10698](https://arxiv.org/abs/2606.10698)),
 by Justin Berman, François Charton, Andrés Luna, Matthias Wilhelm, and
 Mao Zeng. 
 
